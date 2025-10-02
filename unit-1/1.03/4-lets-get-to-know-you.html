@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Introductions</title>
+	</head>
+
+	<body>
+		<h3 id="welcome"></h3>
+		<h3 id="snack"></h3>
+		<h3 id="tv-show"></h3>
+		
+		<script>
+		    var name = prompt("What is your name?");
+		    console.log(name);
+		    var welcome = document.getElementById("welcome");
+		    welcome.innerHTML = "Hello " + name;
+		    
+		    var favsnack = prompt("What is you favorite snack?");
+		    var snack = document.getElementById("snack");
+		    snack.innerHTML = "Glad you like " + favsnack;
+		    
+		    var favshow = prompt("What is your favorite tv show?");
+		    var tvshow = document.getElementById("tv-show");
+		    tvshow.innerHTML = "Glad you like " + favshow
+        ///javascript really was made in 10 days...
+		</script>
+	</body>
+</html>
