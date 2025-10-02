@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+	<body>
+	    <p> The sum of <span id = "num_one"> 4 </span> and <span id = "num_two"> 6 </span> is:</p>
+		<p id = "result"></p>
+		<script>
+		    var num1 = parseInt(document.getElementById("num_one").innerHTML);
+		    var num2 = parseInt(document.getElementById("num_two").innerHTML);
+		    console.log("num1: " + num1);
+		    console.log("num2: " + num2);
+		    
+		    var result = document.getElementById("result");
+		    result.innerHTML = num1 + num2;
+		</script>
+	</body>
+</html>
