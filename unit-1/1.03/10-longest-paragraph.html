@@ -13,31 +13,31 @@
 		<p>“Just remember that the things you put into your head are there forever, he said. You might want to think about that. You forget some things, dont you? Yes. You forget what you want to remember and you remember what you want to forget.” – Cormac McCarthy, The Road</p>
 		<h3 id = "longest"></h3>
 		<script>
-		    ar list = document.getElementsByTagName("p");
+		    var list = document.getElementsByTagName("p");
     
-    // Check each paragraph length individually
-    var length1 = list[0].innerHTML.length;
-    var length2 = list[1].innerHTML.length;
-    var length3 = list[2].innerHTML.length;
-    var length4 = list[3].innerHTML.length;
-    var length5 = list[4].innerHTML.length;
-    
-    // Compare to find the longest
-    var longest = 1;
-    
-    if (length2 > length1) {
-        longest = 2;
-    }
-    if (length3 > length2 && length3 > length1) {
-        longest = 3;
-    }
-    if (length4 > length3 && length4 > length2 && length4 > length1) {
-        longest = 4;
-    }
-    if (length5 > length4 && length5 > length3 && length5 > length2 && length5 > length1) {
-        longest = 5;
-    }
-    
-    document.getElementById("longest").innerHTML = "Paragraph " + longest + " is the longest";</script>
+            // Check each paragraph length individually
+            var length1 = list[0].innerHTML.length;
+            var length2 = list[1].innerHTML.length;
+            var length3 = list[2].innerHTML.length;
+            var length4 = list[3].innerHTML.length;
+            var length5 = list[4].innerHTML.length;
+            
+            // Compare to find the longest
+            var longest = 1;
+            
+            if (length2 > length1) {
+                longest = 2;
+            }
+            if (length3 > length2 && length3 > length1) {
+                longest = 3;
+            }
+            if (length4 > length3 && length4 > length2 && length4 > length1) {
+                longest = 4;
+            }
+            if (length5 > length4 && length5 > length3 && length5 > length2 && length5 > length1) {
+                longest = 5;
+            }
+            
+            document.getElementById("longest").innerHTML = "Paragraph " + longest + " is the longest";</script>
 	</body>
 </html>
