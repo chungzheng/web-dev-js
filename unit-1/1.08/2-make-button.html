@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #textbox {
+            margin: 10px;
+            border: 1px solid black;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='keyboard'>
+    </div>
+
+    <div id='textbox'>
+    </div>
+</body>
+<script>
+    //create function makeButton
+    function makeButton(string) {
+        var keyboard = document.getElementById("keyboard");
+        var button = document.createElement("button");
+        keyboard.appendChild(button);
+        button.innerHTML = string;
+    }
+
+    //call makeButton twice to test.
+    makeButton("A");
+    makeButton("B");
+
+</script>
+
+</html>
