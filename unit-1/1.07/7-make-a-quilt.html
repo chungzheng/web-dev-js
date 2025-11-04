@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html,
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+            width: 100%;
+            padding-left: 2%;
+            padding-right: 2%;
+        }
+
+        div {
+            height: 10%;
+            width: 9%;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        //add 100 divs to the canvas
+        for (var i = 0; i < 100; i++) {
+            var square = document.createElement("div");
+            document.body.appendChild(square);
+        }
+
+        var divs = document.getElementsByTagName("div");
+
+        for (var i = 0; i < 100; i++) {
+            divs[i].addEventListener("mouseover", paint);
+        }
+
+        function paint() {
+            var colors = ["red", "orange", "yellow", "green", "blue", "purple"];
+            var randColor = Math.floor(Math.random() * 4);
+            this.style.backgroundColor = colors[randColor];
+        }
+
+        //write function paint 
+    </script>
+</body>
+
+</html>
