@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #textbox {
+            margin: 10px;
+            border: 1px solid black;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id='keyboard'>
+    </div>
+
+    <div id='textbox'>
+    </div>
+</body>
+<script>
+    makeButton("q");
+    makeButton("w");
+    //copy your makeButton function from the previous exercise
+    function makeButton(string) {
+        var keyboard = document.getElementById("keyboard");
+        var button = document.createElement("button");
+        keyboard.appendChild(button);
+        button.innerHTML = string;
+
+        button.addEventListener("click", function () {
+            makeText(string);
+        });
+    }
+
+    //create the makeText function
+    function makeText(character) {
+        var textbox = document.getElementById("textbox");
+        textbox.innerHTML += character;
+    }
+
+</script>
+
+</html>
